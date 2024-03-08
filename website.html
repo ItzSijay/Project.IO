@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is my website</title>
+        <link rel="stylesheet" href="style.css">
+
+    
+        <style>
+            .main{
+            background-color: orange;
+            padding: 50px 10px;
+            margin: 20px 0px;
+        }
+         </style> 
+    </head>
+    <body> 
+    
+
+
+<h3>Fullscreen toggle</h3>
+<button id="btn">Go Fullscreen</button>
+
+
+
+<script src="script.js"></script>
+
+
+
+<div class="container" id="blur">
+    <div class="content">
+        <h2>Liamme Charles G. Alborote<br>BSIT-NA-3B<br>Click "READ MORE" to know more about me</h2>
+        
+        <a href="#"onclick="toggle()">READ MORE</a>
+
+    </div>
+</div>
+<div id="popup">
+    <h1>BSIT-NA-3B<br><br><br><br><br><br><br><br>Hi! My name is Liamme Charles Alborote, a third-year student from Tarlac State University, pursuing a Bachelor of Science In Information Technology<br><br></h1>
+    <h4><br><br><br><br>Age: 21<br>Residing at: Armenia Tarlac City<br>Religion: Roman Catholic<br><br>Hobbies:<br>Watching movies or series<br>Playing Sports<br>Playing Computer games</h4>
+
+    <a href="#"onclick="toggle()">Close</a>
+    </div>
+<script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+</script>
+ 
+
+
+
+
+    
+    </body>
+</html>
